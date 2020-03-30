@@ -1,0 +1,14 @@
+some elements of part one are still broken. I ran out of time and it was my first time creating a web-page. 
+
+To run programs. 
+
+Parts 1/2 can be run by installing python's flask. from there, traverse to the directory where Part1.py or csvSaver.py is located.
+
+Run: 	set (or export if on linux) FLASK_APP = Part1.py (or csvSaver.py)
+	flask run
+
+This will launch the server.
+For Part1, click on the in the terminal to take you to the site. 
+For part 2, any REST (POST) requests sent to this IP/processjson will launch the micro-service that saves that requests data as a csv
+
+Part 3 can be compiled and run as a java program from the source folder.

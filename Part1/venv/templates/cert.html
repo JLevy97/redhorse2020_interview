@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Cert1{% endblock %}
+
+{% block content %}
+<form action="submit" method="post">
+
+    <p>Name:</p>
+	<p><input type="text" name="nm" value={{a}}></p>
+    <p>NicName:</p>
+	<p><input type="text" name="nnm" /></p>
+
+    <p>DateName:</p>
+    <input type="date" id="start" name="date" value={{e}}
+           min="2020-01-01" max="2999-12-31">
+
+    <p>Certificate:</p>
+	<p><input type="text" name="cert" value={{c}}></p>
+    <p>Certificate Description:</p>
+	<p><input type="text" name="certDes" value={{d}}></p>
+
+    <input type="radio" id="L1" name="layout" value="Layout1">
+    <label for="male">Layout1</label><br>
+    <input type="radio" id="L2" name="layout" value="Layout2">
+    <label for="female">Layout2</label><br>
+
+    <p><input type="submit" value="submit"/></p>
+</form>
+{% endblock %}
+
+
+{% block certDisp %}
+<h1 style="text-align:center">{{c}}</h1>
+<h2 style="text-align:center">{{d}}</h2>
+<p>Granted to: {{a}}</p>
+<p>Awarded on: {{e}}</p>
+{% endblock %}
